@@ -1,7 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Poppins:wght@200;400;600&display=swap');
 
 :root {
+  font-size: 10px;
+  font-weight: 400;
   font-family: 'Inter', sans-serif;
+
+  color: #2B283A;
 }
 
 /* CSS Reset */
@@ -82,4 +86,79 @@ table {
   color: #ffffff;
   font-weight: 500;
   font-size: 14px;
+}
+
+/* Container */
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  max-width: 1200px;
+
+  gap: 2rem;
+  margin-inline: auto;
+  padding: 2rem;
+}
+
+/* Card */
+
+.card {
+  display: flex;
+
+  max-width: 100%;
+
+  border-radius: 10px;
+}
+
+.card--img {
+  min-height: 300px;
+  min-width: 20%;
+
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  border-radius: 10px;
+}
+
+.card--info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  gap: 1.5rem;
+  padding: 2rem;
+}
+
+.card--location {
+  display: flex;
+  align-items: center;
+}
+
+.card--location-img {
+  width: 20px;
+}
+
+.card--location-country {
+  text-transform: uppercase;
+  letter-spacing: 3px;
+
+  padding-inline: .5rem;
+}
+
+.card--location-google-maps-link {
+  color: #918E9B;
+  
+  padding-left: 1rem;
+}
+
+.card--title {
+  font-size: 25px;
+  font-weight: 700;
+}
+
+.card-dates {
+  font-weight: 700;
 }
