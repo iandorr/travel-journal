@@ -6,8 +6,6 @@ import data from './assets/data/data'
 
 function App() {
 
-  console.log(`Data from data: ${data}`)
-
   const cards = data.map( item => {
     return (
       <Card
@@ -22,8 +20,6 @@ function App() {
       ></Card>
     )
   })
-
-  console.log(`Cards from cards: ${cards}`)
 
   return (
     <div className="App">
